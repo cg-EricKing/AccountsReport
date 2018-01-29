@@ -7,7 +7,7 @@
         // Init Spreadsheet
         var spreadsheet = SpreadsheetApp.openByUrl('https://docs.google.com/spreadsheets/d/13MvQ2dXsekZP3ZBXZSoYOCyPsZfVJBTMGIdPAGWw7Zc/edit?usp=sharing');
         var sheetName = spreadsheet.getSheetName();
-        // Format report to print on correct sheet  
+        // Format report to print on correct sheet  - IMPORTANT!!
         var sheet = spreadsheet.getSheets()[1];
         
         // Select accounts at the manager level - format for desired output 
