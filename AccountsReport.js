@@ -2,6 +2,8 @@
     // Selects up to 50 accounts per label
     // Prints a report with the stats - Name, Cost, Clicks, Impressions, Ctr, AverageCpm
     // Script must be formatted for the correct sheet, condition, label, date range, and order(cost, ctr)
+    // Need to figure out a way to execute a report for a desired label
+    // Label name passed in as a parameter in the .withCondition() statement
 
     function main() {
         // Init Spreadsheet
@@ -38,7 +40,7 @@
             var reportRow = iter.next();
             sheet.appendRow([
                   reportRow["AccountDescriptiveName"], 
-                reportRow["Cost"],
+                  reportRow["Cost"],
                   reportRow["Clicks"],
                   reportRow["Impressions"],  
                   reportRow["Ctr"], 
